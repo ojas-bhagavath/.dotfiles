@@ -209,7 +209,7 @@ return {
 				},
 			},
 			system_service = "snapper-cleanup.timer",
-			post_install = " [ -f /etc/snapper/configs/root ] || sudo snapper -c root create-config /",
+			post_install = "if ! sudo btrfs subvolume show /.snapshots >/dev/null 2>&1; then sudo rm -rf /.snapshots && sudo btrfs subvolume create /.snapshots; fi && [ -f /etc/snapper/configs/root ] || sudo snapper -c root create-config /",
 		},
 		{
 			name = "snap-pac",
@@ -223,6 +223,11 @@ return {
 		{ name = "wget", desc = "A file downloading utility" },
 		{ name = "wl-clip-persist", desc = "Keeps Wayland clipboard content after the source app closes" },
 		{ name = "wl-clipboard", desc = "Clipboard tool for wayland" },
+		{
+			name = "xdg-desktop-portal-termfilechooser-hunkyburrito-git",
+			desc = "backend to be able to use terminal file managers for browser file selection",
+			config = "firefox",
+		},
 		{ name = "yazi", desc = "A TUI file manager written in rust", config = "yazi" },
 		{ name = "yt-dlp", desc = "A youtube-dl fork with additional features and fixes" },
 		{ name = "zoxide", desc = "A smarter cd replacement" },
