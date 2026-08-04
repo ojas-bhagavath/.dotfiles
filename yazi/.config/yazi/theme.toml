@@ -1,0 +1,11 @@
+[flavor]
+dark = "tokyonight-moon"
+light = "tokyonight-day"
+
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[filetype]
+rules = [{ url = "*/", fg = "#c099ff" }]

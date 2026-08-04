@@ -1,0 +1,51 @@
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\ 
+$hostname\
+${custom.yazi}\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$python"""
+
+[username]
+style_user = 'red bold'
+style_root = 'red bold'
+format = '[\[](bold purple)[$user]($style)[@](bold green)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$hostname](bold blue)[\]](bold purple) '
+disabled = false
+
+[directory]
+style = "bold yellow"
+read_only = " "
+truncation_length = 4
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+format = "[$symbol $branch]($style) "
+style = "#f34f29"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[git_metrics]
+disabled = false
+added_style = 'bold green'
+deleted_style = 'bold red'
+format = '([+$added]($added_style))([-$deleted]($deleted_style) )'

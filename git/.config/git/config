@@ -1,0 +1,65 @@
+[user]
+    name = Ojas Bhagavath
+    email = ojas.bhagavath@gmail.com
+    signingkey = 1B127149608E062BE5D2F4D8714FA27FDE837538
+
+[init]
+    defaultBranch = main
+
+[commit]
+    gpgSign = true
+
+[core]
+    compression = 9
+    whitespace = error
+    preloadindex = true
+    editor = nvim
+    excludeFiles = "~/.config/git/.gitignore"
+
+[pager]
+    diff = diff-so-fancy | $PAGER
+
+[diff-so-fancy]
+    markEmptyLines = false
+
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all
+
+[diff]
+    context = 3
+    renames = copies
+    interHunkContext = 10
+
+[advice]
+    addEmptyPathspec = false
+    pushNonFastForward = false
+    statusHints = false
+
+[color "diff"]
+    meta = black bold
+    frag = magenta
+    context = white
+    whitespace = yellow reverse
+    old = red
+
+[interactive]
+    diffFilter = diff-so-fancy --patch
+    singlekey = true
+
+[push]
+    autoSetupRemote = true
+    default = current
+    
+[pull]
+    default = current
+    rebase = true
+
+[rebase]
+    autostash = true
+    missingCommitsCheck = warn
+
+[log]
+    abbrevCommit = true
+    graphColors = blue,yellow,cyan,magenta,green,red

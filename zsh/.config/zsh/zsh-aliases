@@ -1,0 +1,39 @@
+alias :q='exit'
+
+# General shell commands
+alias cat="bat"
+alias la='eza --oneline --icons --git --group-directories-first --long --all'
+alias treee='exa --tree'
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias rm='trash -iv'
+alias cd='z'
+
+# Cloudflare Warp
+alias wcc='warp-cli connect'
+alias wcd='warp-cli disconnect'
+alias wcs='warp-cli status'
+
+alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
+
+# YouTube
+alias ytf="ytfzf -t -T wayland --features=hd,subtitles"
+alias ytv='yt-dlp --ignore-errors --no-playlist --continue --format="bestvideo*+bestaudio/best" --format-sort="res:720" --remux-video="mkv" --embed-subs --embed-thumbnail --embed-chapters --embed-metadata --output="$HOME/Stuff/Videos/%(channel)s/%(title)s.%(ext)s"'
+alias ytvp='yt-dlp --ignore-errors --yes-playlist --continue --format "bestvideo*+bestaudio/best" --format-sort="res:720" --remux-video="mkv" --embed-subs --embed-thumbnail --embed-chapters --embed-metadata --output="$HOME/Stuff/Videos/%(channel)s/%(playlist)s/%(playlist_index)s. %(title)s.%(ext)s"'
+alias yta='yt-dlp --ignore-errors --no-playlist --continue --format "bestaudio*" --extract-audio --audio-format="mp3" --audio-quality=0 --embed-thumbnail --embed-metadata --output="$HOME/Stuff/Audios/%(channel)s/%(title)s.%(ext)s"'
+alias ytap='yt-dlp --ignore-errors --yes-playlist --continue --format "bestaudio*" --extract-audio --audio-format="mp3" --audio-quality=0 --embed-thumbnail --embed-metadata --output="$HOME/Stuff/Audios/%(channel)s/%(playlist)s/%(playlist_index)s. %(title)s.%(ext)s"'
+
+# Git
+alias gs="git status --short"
+alias gd="git diff --output-indicator-new=' '--output-indicator-old=' '"
+alias ga="git add --patch"
+alias gA="git add ."
+alias gc="git commit -S -m "
+alias gp="git pull"
+alias gP="git push"
+alias gl="git log --all --graph --pretty=format:'%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n'"
+
+# Tmux
+alias tn="tmux new-session -s"
+alias tl="tmux list-sessions"
+alias ta="tmux attach-session"
