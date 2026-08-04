@@ -53,7 +53,11 @@ return {
 			post_install = "sudo sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/g' /etc/default/grub; sudo grub-mkconfig -o /boot/grub/grub.cfg",
 		},
 
-		{ name = "grub-btrfs", desc = "Include btrfs snapshots in GRUB boot options" },
+		{
+			name = "grub-btrfs",
+			desc = "Include btrfs snapshots in GRUB boot options",
+			user_service = "grub-btrfsd.service",
+		},
 		{ name = "gvfs", desc = "filesystem management utility for thunar" },
 		{ name = "gwenview", desc = "Image viewing utility by KDE" },
 		{ name = "handlr-regex", desc = "Powerful alternative to xdg-utils written in Rust" },
