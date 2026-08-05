@@ -231,7 +231,7 @@ return {
 		{ name = "yazi", desc = "A TUI file manager written in rust", config = "yazi" },
 		{ name = "yt-dlp", desc = "A youtube-dl fork with additional features and fixes" },
 		{ name = "zoxide", desc = "A smarter cd replacement" },
-		{ name = "zsh", desc = "An advanced and programmable command interpreter for UNIX", config = "zsh" },
+		{ name = "zsh", desc = "An advanced and programmable command interpreter for UNIX", config = "zsh", post_install = "chsh -s '$(which zsh)'", },
 	},
 
 	flatpak = {
