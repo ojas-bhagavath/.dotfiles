@@ -12,7 +12,7 @@ end = [
   "volume",
   "brightness",
   "battery",
-  "clock",
+  "group:g1",
   "session",
 ]
 font_family = "Source Sans Pro"
@@ -27,8 +27,23 @@ thickness = 45
 left = "panel-toggle control-center"
 middle = "settings-toggle bar"
 
+[[bar.default.capsule_group]]
+accordion = true
+accordion_direction = "start"
+border = ""
+enabled = true
+fill = "secondary"
+foreground = "on_primary"
+id = "g1"
+members = ["clock", "date"]
+opacity = 1.0
+padding = 6.0
+
 [battery]
 warning_threshold = 15
+
+[brightness]
+minimum_brightness = 0.019999999552965164
 
 [calendar]
 enabled = true
@@ -227,6 +242,9 @@ capsule_foreground = "on_secondary"
 
 [widget.clock.actions]
 right = "panel-toggle noctalia/world_clock:panel"
+
+[widget.date]
+format = "{:%a, %d %b %Y,}"
 
 [widget.media]
 hide_when_no_media = true
