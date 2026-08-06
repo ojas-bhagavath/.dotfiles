@@ -16,7 +16,6 @@ return {
 		{ name = "cloudflare-warp-bin", desc = "Cloudflare Warp Client", system_service = "warp-svc.service" },
 		{ name = "cmatrix", desc = "matrix animation in terminal" },
 		{ name = "diff-so-fancy", desc = "Makes git/diff output more human friendly" },
-		{ name = "thunar", desc = "A GUI file manager" },
 		{ name = "dosfstools", desc = "Utilities for creating and checking FAT/VFAT filesystems" },
 		{ name = "downgrade", desc = "Bash script to downgrade packages" },
 		{ name = "efibootmgr", desc = "Utility to modify the UEFI Boot Manager" },
@@ -124,6 +123,7 @@ return {
 		},
 		{ name = "pandoc-bin", desc = "A document converter tool" },
 		{ name = "pavucontrol", desc = "pulseaudio volume control" },
+		{ name = "pcmanfm", desc = "gui file manager", config = "pcmanfm" },
 		{
 			name = "pipewire",
 			desc = "Low-latency audio/video router and processor",
