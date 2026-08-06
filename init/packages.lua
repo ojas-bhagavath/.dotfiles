@@ -112,6 +112,7 @@ return {
 			},
 		},
 		{ name = "ttf-noto-nerd", desc = "google noto fonts ttf with nerd-fonts patch" },
+		{ name = "noto-fonts", desc = "google noto fonts ttf" },
 		{ name = "npm", desc = "Package manager for Node.js" },
 		{ name = "ntfs-3g", desc = "NTFS filesystem driver and utilities" },
 		{ name = "nwg-look", desc = "utility to style gtk applications, needed for noctalia gtk template" },
@@ -228,10 +229,20 @@ return {
 			desc = "backend to be able to use terminal file managers for browser file selection",
 			config = "firefox",
 		},
-		{ name = "yazi", desc = "A TUI file manager written in rust", config = "yazi" },
+		{
+			name = "yazi",
+			desc = "A TUI file manager written in rust",
+			config = "yazi",
+			post_install = "ya pkg upgrade",
+		},
 		{ name = "yt-dlp", desc = "A youtube-dl fork with additional features and fixes" },
 		{ name = "zoxide", desc = "A smarter cd replacement" },
-		{ name = "zsh", desc = "An advanced and programmable command interpreter for UNIX", config = "zsh", post_install = "chsh -s '$(which zsh)'", },
+		{
+			name = "zsh",
+			desc = "An advanced and programmable command interpreter for UNIX",
+			config = "zsh",
+			post_install = "chsh -s $(which zsh)",
+		},
 	},
 
 	flatpak = {
