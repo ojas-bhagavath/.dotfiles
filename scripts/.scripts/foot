@@ -1,3 +1,0 @@
-#!/usr/bin/zsh
-
-exec $TERM -e "${@:2}"

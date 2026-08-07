@@ -146,7 +146,7 @@ temperature_night = 5000
 enabled = ["noctalia/world_clock"]
 
 [shell]
-avatar_path = "/home/ojas/Stuff/Pictures/wallpapers/philosophy/marcus-aurelius-1.png"
+avatar_path = "/home/ojas/.dotfiles/assets/marcus-aurelius-1.png"
 clipboard_auto_paste = "off"
 clipboard_history_max_entries = 10000
 font_family = "Source Sans Pro"

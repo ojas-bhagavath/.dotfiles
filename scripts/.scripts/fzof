@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-fil=$(find ~/. -type f | fzf)
-setsid xdg-open "$fil" &
-pkill -n $!

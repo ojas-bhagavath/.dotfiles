@@ -158,7 +158,6 @@ return {
 			config = "sioyek",
 		},
 		{ name = "starship", desc = "A cross platform prompt for various shells", config = "starship" },
-		{ name = "steam", desc = "Valve's digital distribution platform for games" },
 		{ name = "stow", desc = "A powerful symlink utility" },
 		{
 			name = "syncthing",
