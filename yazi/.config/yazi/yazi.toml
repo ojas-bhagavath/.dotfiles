@@ -6,6 +6,15 @@ show_hidden = true
 [preview]
 tab_size = 4
 
+[opener]
+handlr = [{ run = "handlr open %s", desc = "Open with handlr", orphan = true }]
+
+[open]
+rules = [
+  { url = "*", use = ["handlr", "edit"] },
+  { mime = "*", use = ["handlr", "edit"] },
+]
+
 [tasks]
 image_bound = [10000, 10000]
 

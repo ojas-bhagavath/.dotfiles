@@ -8,11 +8,12 @@ hl.env("QT_QPA_PLATFORM", "wayland")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
 -- XDG Base Directories
-hl.env("XDG_CONFIG_HOME", os.getenv("HOME") .. "/.config")
-hl.env("XDG_CACHE_HOME", os.getenv("HOME") .. "/.cache")
-hl.env("XDG_DATA_HOME", os.getenv("HOME") .. "/.local/share")
-hl.env("XDG_STATE_HOME", os.getenv("HOME") .. "/.local/state")
-hl.env("DOTFILES", os.getenv("HOME") .. "/.dotfiles")
+local home = os.getenv("HOME")
+hl.env("XDG_CONFIG_HOME", home .. "/.config")
+hl.env("XDG_CACHE_HOME", home .. "/.cache")
+hl.env("XDG_DATA_HOME", home .. "/.local/share")
+hl.env("XDG_STATE_HOME", home .. "/.local/state")
+hl.env("DOTFILES", home .. "/.dotfiles")
 
 -- Default Applications
 hl.env("TERMINAL", "kitty")
@@ -22,29 +23,29 @@ hl.env("BROWSER", "firefox")
 hl.env("FILEMANAGER", "yazi")
 
 -- Tool/Runtime Directories
-hl.env("GNUPGHOME", os.getenv("HOME") .. "/.gnupg")
-hl.env("CARGO_HOME", os.getenv("HOME") .. "/.local/share/cargo")
-hl.env("GOPATH", os.getenv("HOME") .. "/.local/share/go")
-hl.env("RUSTUP_HOME", os.getenv("HOME") .. "/.local/share/rustup")
-hl.env("PNPM_HOME", os.getenv("HOME") .. "/.local/share/pnpm")
+hl.env("GNUPGHOME", home .. "/.gnupg")
+hl.env("CARGO_HOME", home .. "/.local/share/cargo")
+hl.env("GOPATH", home .. "/.local/share/go")
+hl.env("RUSTUP_HOME", home .. "/.local/share/rustup")
+hl.env("PNPM_HOME", home .. "/.local/share/pnpm")
 
--- PATH Construction
+-- PATH Construction (User paths PREPENDED ahead of system PATH)
 hl.env(
 	"PATH",
-	os.getenv("PATH")
-		.. ":"
-		.. os.getenv("HOME")
+	home
 		.. "/.local/bin"
 		.. ":"
-		.. os.getenv("HOME")
+		.. home
 		.. "/.scripts"
 		.. ":"
-		.. os.getenv("HOME")
+		.. home
 		.. "/.local/share/cargo/bin"
 		.. ":"
-		.. os.getenv("HOME")
+		.. home
 		.. "/.local/share/pnpm"
 		.. ":"
-		.. os.getenv("HOME")
+		.. home
 		.. "/.elan/bin"
+		.. ":"
+		.. os.getenv("PATH")
 )
