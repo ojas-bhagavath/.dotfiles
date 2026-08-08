@@ -35,7 +35,7 @@ enabled = true
 fill = "secondary"
 foreground = "on_primary"
 id = "g1"
-members = ["clock", "date"]
+members = ["clock", "clock-india"]
 opacity = 1.0
 padding = 6.0
 
@@ -43,7 +43,7 @@ padding = 6.0
 warning_threshold = 15
 
 [brightness]
-minimum_brightness = 0.019999999552965164
+minimum_brightness = 0.050000000000000003
 
 [calendar]
 enabled = true
@@ -61,13 +61,13 @@ type = "bluetooth"
 type = "audio"
 
 [[control_center.shortcuts]]
-type = "mic_mute"
-
-[[control_center.shortcuts]]
 type = "nightlight"
 
 [[control_center.shortcuts]]
 type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "power_profile"
 
 [hooks]
 started = "noctalia msg volume-set 0; noctalia msg brightness-set 5"
@@ -129,21 +129,9 @@ show_session_buttons = true
 show_unlock_hint = false
 show_weather = true
 
-[lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-box_height = 128.0
-box_width = 816.0
-cx = 960.0
-cy = 361.5
-output = "eDP-1"
-rotation = 0.0
-type = "clock"
-
 [nightlight]
 enabled = true
 temperature_night = 5000
-
-[plugins]
-enabled = ["noctalia/world_clock"]
 
 [shell]
 avatar_path = "/home/ojas/.dotfiles/assets/marcus-aurelius-1.png"
@@ -235,13 +223,22 @@ title_scroll = "on_hover"
 [widget.active_window.actions]
 left = "window-switcher"
 
+[widget.brightness]
+enabled = true
+
 [widget.clock]
 capsule = true
 capsule_fill = "secondary"
 capsule_foreground = "on_secondary"
+tooltip_format = "{:%a, %d %b %Y}"
 
-[widget.clock.actions]
-right = "panel-toggle noctalia/world_clock:panel"
+[widget.clock-india]
+capsule = true
+capsule_fill = "secondary"
+capsule_foreground = "on_secondary"
+timezone = "Asia/Kolkata"
+tooltip_format = "{:%a, %d %b %Y}"
+type = "clock"
 
 [widget.date]
 format = "{:%a, %d %b %Y,}"

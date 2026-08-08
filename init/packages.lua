@@ -138,6 +138,11 @@ return {
 		{ name = "pdfjs", desc = "A utility required to natively view pdfs on browsers" },
 		{ name = "pdftk", desc = "Command-line tool for working with PDFs" },
 		{ name = "poppler", desc = "PDF rendering library based on xpdf 3.0" },
+		{
+			name = "power-profiles-daemon",
+			desc = "utility to set up power profiles",
+			system_service = "power-profiles-daemon.service",
+		},
 		{ name = "python-pip", desc = "A tool for installing python packages" },
 		{ name = "qbittorrent", desc = "An open source torrent client" },
 		{ name = "qpdf", desc = "A Content-Preserving PDF Transformation System" },
