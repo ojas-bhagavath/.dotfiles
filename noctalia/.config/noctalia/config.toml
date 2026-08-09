@@ -70,6 +70,8 @@ type = "caffeine"
 type = "power_profile"
 
 [hooks]
+battery_charging = "noctalia msg power-set performance"
+battery_discharging = "noctalia msg power-set balanced"
 started = "noctalia msg volume-set 0; noctalia msg brightness-set 5"
 
 [idle]
@@ -97,7 +99,10 @@ address = "Norman, United States"
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = ["lockscreen-login-box@eDP-1"]
+widget_order = [
+  "lockscreen-widget-0000000000000001",
+  "lockscreen-login-box@eDP-1",
+]
 
 [lockscreen_widgets.grid]
 cell_size = 16
@@ -106,9 +111,9 @@ visible = true
 
 [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
 box_height = 196.0
-box_width = 810.0
+box_width = 800.0
 cx = 960.0
-cy = 540.0
+cy = 590.0
 output = "eDP-1"
 rotation = 0.0
 type = "login_box"
@@ -129,9 +134,39 @@ show_session_buttons = true
 show_unlock_hint = false
 show_weather = true
 
+[lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+box_height = 96.0
+box_width = 800.0
+cx = 960.0
+cy = 428.0
+output = "eDP-1"
+rotation = 0.0
+type = "clock"
+
+[lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+background = true
+background_color = "surface"
+background_opacity = 0.80000000000000004
+background_padding = 10
+background_radius = 12
+center_text = false
+circle = true
+clock_style = "digital"
+color = "on_surface"
+font_family = ""
+format = "{:%H:%M}"
+shadow = true
+timezone = ""
+
 [nightlight]
 enabled = true
 temperature_night = 5000
+
+[osd]
+background_opacity = 0.89999997988343239
+
+[plugins]
+enabled = []
 
 [shell]
 avatar_path = "/home/ojas/.dotfiles/assets/marcus-aurelius-1.png"
