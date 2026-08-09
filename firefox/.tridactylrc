@@ -48,6 +48,7 @@ set searchurls.gr https://www.goodreads.com/user/show/165030642-ojas-bhagavath
 set searchurls.gs https://www.gradescope.com
 set searchurls.ig https://www.instagram.com/ojas.bhagavath
 set searchurls.irctc https://www.irctc.co.in/nget/train-search
+set searchurls.jf http://localhost:8096
 set searchurls.ke https://nickcoutsos.github.io/keymap-editor
 set searchurls.li https://www.linkedin.com/in/ojas-bhagavath
 set searchurls.lre https://www.rexegg.com
