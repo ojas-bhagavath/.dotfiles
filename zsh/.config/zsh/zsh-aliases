@@ -21,7 +21,16 @@ alias ytf="ytfzf -t -T wayland --features=hd,subtitles"
 alias ytv='yt-dlp --ignore-errors --no-playlist --continue --format="bestvideo*+bestaudio/best" --format-sort="res:720" --remux-video="mkv" --embed-subs --embed-thumbnail --embed-chapters --embed-metadata --output="$HOME/Stuff/Videos/%(channel)s/%(title)s.%(ext)s"'
 alias ytvp='yt-dlp --ignore-errors --yes-playlist --continue --format "bestvideo*+bestaudio/best" --format-sort="res:720" --remux-video="mkv" --embed-subs --embed-thumbnail --embed-chapters --embed-metadata --output="$HOME/Stuff/Videos/%(channel)s/%(playlist)s/%(playlist_index)s. %(title)s.%(ext)s"'
 alias yta='yt-dlp --ignore-errors --no-playlist --continue --format "bestaudio*" --extract-audio --audio-format="mp3" --audio-quality=0 --embed-thumbnail --embed-metadata --output="$HOME/Stuff/Audios/%(channel)s/%(title)s.%(ext)s"'
-alias ytm='yt-dlp --ignore-errors --continue --format "bestaudio/best" --extract-audio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --download-archive "$HOME/Stuff/Music/.archive.txt" --replace-in-metadata title "(?i)\s*[\(\[\{]?(official\s*)?(music\s*)?(video|audio|lyric|lyrics|topic|4k|hd|remastered)[\)\]\}]?" "" --output "$HOME/Stuff/Music/%(artist,uploader)s - %(title)s.%(ext)s"'
+alias ytm='yt-dlp \
+  --extract-audio \
+  --audio-format mp3 \
+  --audio-quality 0 \
+  --embed-thumbnail \
+  --embed-metadata \
+  --windows-filenames \
+  --download-archive "$HOME/Stuff/Music/.archive.txt" \
+  --parse-metadata "title:%(artist)s - %(title)s" \
+  -o "$HOME/Stuff/Music/%(artist,uploader)s - %(title)s.%(ext)s"'
 alias ytap='yt-dlp --ignore-errors --yes-playlist --continue --format "bestaudio*" --extract-audio --audio-format="mp3" --audio-quality=0 --embed-thumbnail --embed-metadata --output="$HOME/Stuff/Audios/%(channel)s/%(playlist)s/%(playlist_index)s. %(title)s.%(ext)s"'
 
 # Git
