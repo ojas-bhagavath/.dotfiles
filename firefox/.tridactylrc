@@ -27,6 +27,10 @@ unbind <C-o>
 bind <C-o> fillcmdline winopen
 unbind <C-O>
 bind <C-O> fillcmdline winopen -private
+unbind <C-J>
+bind <C-J> tabmove +1
+unbind <C-K>
+bind <C-K> tabmove -1
 
 " qutebrowser style quickmarks
 set searchurls.awf https://bendodson.com/projects/itunes-artwork-finder
