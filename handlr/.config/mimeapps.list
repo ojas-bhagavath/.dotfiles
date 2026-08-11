@@ -18,6 +18,7 @@ application/x-cbz=sioyek.desktop;
 application/x-extension-fcstd=org.freecad.FreeCAD.desktop;
 application/x-openscad=org.openscad.OpenSCAD.desktop;
 application/x-shellscript=neovide.desktop;
+application/zip=org.kde.ark.desktop;
 audio/3gpp=mpv.desktop;
 audio/3gpp2=mpv.desktop;
 audio/aac=mpv.desktop;

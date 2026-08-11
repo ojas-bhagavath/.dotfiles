@@ -1,6 +1,7 @@
 return {
 	aur = {
 		{ name = "7zip", desc = "File archiver with a high compression ratio" },
+		{ name = "ark", desc = "KDE archive management software" },
 		{ name = "asciinema", desc = "Records and shares terminal sessions", config = "asciinema" },
 		{ name = "base", desc = "Minimal package set for a base Arch installation" },
 		{ name = "adw-gtk-theme", desc = "gtk theme needed for noctalia templates" },
