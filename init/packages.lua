@@ -100,7 +100,7 @@ return {
 			system_service = "NetworkManager.service",
 		},
 		{
-			name = "noctalia-git",
+			name = "noctalia",
 			desc = "Minimal Wayland desktop shell built on Quickshell (git version)",
 			config = "noctalia",
 		},
