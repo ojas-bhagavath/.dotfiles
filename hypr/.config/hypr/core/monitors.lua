@@ -6,6 +6,12 @@ hl.monitor({
 	scale = 1,
 })
 hl.monitor({
+	output = "IPAD",
+	mode = "2360x1640",
+	position = "16x1080", -- X=16 centers it under 1920px wide eDP-1 (at scale 1.25)
+	scale = 1.25,
+})
+hl.monitor({
 	output = "",
 	mode = "highres",
 	scale = 1,
