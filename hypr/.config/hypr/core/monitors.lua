@@ -8,8 +8,8 @@ hl.monitor({
 hl.monitor({
 	output = "IPAD",
 	mode = "2360x1640",
-	position = "16x1080", -- X=16 centers it under 1920px wide eDP-1 (at scale 1.25)
-	scale = 1.25,
+	position = "auto-center-down",
+	scale = 1.5,
 })
 hl.monitor({
 	output = "",
