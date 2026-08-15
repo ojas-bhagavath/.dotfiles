@@ -43,3 +43,8 @@ typeset -U path PATH
 
 # Construct PATH: Prepend custom paths (left-to-right priority) over existing system PATH
 export PATH="$HOME/.local/bin:$HOME/.scripts:$CARGO_HOME/bin:$PNPM_HOME:$HOME/.elan/bin:$PATH"
+
+# Secrets
+if [ -f "$HOME/.secrets" ]; then
+    source "$HOME/.secrets"
+fi

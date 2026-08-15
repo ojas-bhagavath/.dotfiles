@@ -2,3 +2,5 @@ zsh/.config/zsh/plugins/
 zsh/.config/zsh/.zcompdump
 yazi/.config/yazi/flavors/
 yazi/.config/yazi/plugins/
+cliamp/.config/cliamp/*
+!cliamp/.config/cliamp/config.toml

@@ -13,6 +13,7 @@ return {
 		{ name = "btop", desc = "Resource monitor (fancy top/htop alternative)", config = "btop" },
 		{ name = "btrfs-progs", desc = "btrfs filesystem utilities" },
 		{ name = "calibre-bin", desc = "E-book management application (precompiled binary)" },
+		{ name = "cliamp-bin", desc = "A tui music player", config = "cliamp" },
 		{ name = "cliphist", desc = "Wayland clipboard history manager" },
 		{ name = "cloudflare-warp-bin", desc = "Cloudflare Warp Client", system_service = "warp-svc.service" },
 		{ name = "cmatrix", desc = "matrix animation in terminal" },
@@ -83,11 +84,6 @@ return {
 		{ name = "man-db", desc = "A utility to read man pages" },
 		{ name = "mediainfo", desc = "Displays technical info about media files" },
 		{ name = "mkvtoolnix-cli", desc = "A tool to manipulate mkv files" },
-		{
-			name = "mpd",
-			desc = "Flexible, powerful, server-side application for playing music",
-			user_service = "mpd.service",
-		},
 		{ name = "mpv", desc = "The OG video player", config = "mpv" },
 		{ name = "nemo", desc = "A GUI file manager" },
 		{ name = "neovide", desc = "A graphical interface for neovim" },
@@ -159,7 +155,6 @@ return {
 		{ name = "qt6-wayland", desc = "provides qt6 api for wayland" },
 		{ name = "qt6ct-kde", desc = "qt6 configuration utility" },
 		{ name = "ripgrep", desc = "A search tool that combines the usability of ag with the raw speed of grep" },
-		{ name = "rmpc", desc = "A beautiful and configurable TUI client for MPD" },
 		{
 			name = "sioyek-dev",
 			desc = "PDF viewer for research papers and technical books with vim keybinds.",
