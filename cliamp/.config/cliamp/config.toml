@@ -2,9 +2,11 @@ theme = "tokyo-night"
 repeat = "all"
 initial_directory = "~/Stuff/Music"
 visualizer = "Ascii"
-provider = "ytmusic"
+provider = "local"
 eq_preset = "Flat"
 
+shuffle = true
+audio_device = bluez_output.C4_A9_B8_4E_94_96.1
 [local]
 enabled = true
 [ytmusic]
