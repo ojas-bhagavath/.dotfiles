@@ -21,6 +21,5 @@ for i = 6, 10 do
 	hl.workspace_rule({
 		workspace = tostring(i),
 		monitor = "IPAD",
-		decorate = false,
 	})
 end

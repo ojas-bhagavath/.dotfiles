@@ -1,7 +1,7 @@
 theme = "tokyo-night"
 repeat = "all"
 initial_directory = "~/Stuff/Music"
-visualizer = "Columns"
+visualizer = "Ascii"
 provider = "ytmusic"
 eq_preset = "Flat"
 
