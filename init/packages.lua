@@ -219,10 +219,6 @@ return {
 		{ name = "typst", desc = "Markup-based typesetting system, a modern LaTeX alternative" },
 		{ name = "udiskie", desc = "Automounter for removable media using udisks" },
 		{ name = "unarchiver", desc = "Required for archive preview in yazi" },
-		{
-			name = "uwsm",
-			desc = "Universal Wayland Session Manager wraps standalone Wayland compositors into a set of Systemd units and provides robust session management",
-		},
 		{ name = "visual-studio-code-bin", desc = "Microsoft's code editor (official binary build)", config = "code" },
 		{ name = "wayvnc", desc = "VNC server for wlroots-based Wayland compositors" },
 		{ name = "wev", desc = "A tool for debugging wayland events on a Wayland window" },
