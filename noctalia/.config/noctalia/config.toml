@@ -285,6 +285,10 @@ hide_when_no_media = true
 max_length = 100
 title_scroll = "on_hover"
 
+[widget.media.actions]
+scroll_down = "volume-down"
+scroll_up = "volume-up"
+
 [widget.network]
 show_label = false
 
