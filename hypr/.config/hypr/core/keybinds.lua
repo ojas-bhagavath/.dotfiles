@@ -9,7 +9,6 @@ local browser = "firefox"
 local pdfviewer = "sioyek --new-window"
 
 -- example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
 -- applications
