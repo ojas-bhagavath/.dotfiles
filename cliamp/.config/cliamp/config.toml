@@ -1,5 +1,5 @@
 theme = "tokyo-night"
-repeat = "all"
+repeat = "All"
 initial_directory = "~/Stuff/Music"
 visualizer = "Ascii"
 provider = "local"
