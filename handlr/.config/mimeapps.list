@@ -4,6 +4,8 @@ application/octet-stream=com.prusa3d.PrusaSlicer.desktop;
 application/x-cbz=sioyek.desktop;
 model/obj=com.prusa3d.PrusaSlicer.desktop;
 text/x-lua=neovide.desktop;
+video/matroska=mpv.desktop;
+
 [Default Applications]
 application/epub+zip=sioyek.desktop;
 application/octet-stream=com.prusa3d.PrusaSlicer.desktop;
@@ -186,6 +188,7 @@ video/h264=mpv.desktop;
 video/iso.segment=mpv.desktop;
 video/jpeg=mpv.desktop;
 video/jpm=mpv.desktop;
+video/matroska=mpv.desktop;
 video/mj2=mpv.desktop;
 video/mkv=mpv.desktop;
 video/mp2t=mpv.desktop;
