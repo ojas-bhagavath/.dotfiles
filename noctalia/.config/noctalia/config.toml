@@ -102,6 +102,7 @@ address = "Norman, United States"
 enabled = true
 schema_version = 2
 widget_order = [
+  "lockscreen-login-box@IPAD",
   "lockscreen-widget-0000000000000001",
   "lockscreen-login-box@eDP-1",
 ]
@@ -110,6 +111,33 @@ widget_order = [
 cell_size = 16
 major_interval = 4
 visible = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@IPAD"]
+box_height = 196.0
+box_width = 810.0
+cx = 737.5
+cy = 797.5
+output = "IPAD"
+placement_height = 1025.0
+placement_width = 1475.0
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@IPAD".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 12.0
+center_password_text = false
+input_opacity = 1.0
+input_radius = 6.0
+layout = "regular"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = true
+show_weather = true
 
 [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
 box_height = 196.0
@@ -169,7 +197,8 @@ enabled = true
 temperature_night = 5000
 
 [osd]
-background_opacity = 0.89999997988343239
+background_opacity = 0.99999997764825821
+offset_y = 45
 
 [plugins]
 enabled = []
