@@ -11,7 +11,8 @@ prepend_keymap = [
   # Max-Preview
   { on = ["<A-m>"], run = "plugin toggle-pane max-preview", desc = "Maximize or restore preview" },
   # Mount
-  { on = ["M"], run = "plugin mount", desc = "Toggle mount plugin." },
+  { on = ["M"], run = "plugin mount", desc = "Toggle mount plugin" },
+  { on = ["W"], run = "plugin thumbnails", desc = "Toggle thumbnail view" },
 
   # Hopping
   { on = ["K"], run = "arrow -5", desc = "Move cursor up 5 lines" },
