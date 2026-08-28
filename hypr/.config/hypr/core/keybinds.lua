@@ -7,6 +7,7 @@ local filemanager1 = "kitty -e yazi"
 local filemanager2 = "nemo"
 local browser = "firefox"
 local pdfviewer = "sioyek --new-window"
+local passwordmgr = "keepassxc"
 
 -- example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
@@ -20,6 +21,8 @@ hl.bind(mod .. " + SHIFT + E", hl.dsp.exec_cmd(filemanager2), { description = "l
 hl.bind(mod .. " + B", hl.dsp.exec_cmd(browser), { description = "launch web browser" })
 hl.bind(mod .. " + S", hl.dsp.exec_cmd(pdfviewer), { description = "launch pdf viewer" })
 hl.bind(mod .. " + Comma", hl.dsp.exec_cmd(ipc .. "settings-toggle"), { description = "launch noctalia settings" })
+hl.bind(mod .. " + P", hl.dsp.exec_cmd(passwordmgr), { description = "launch password manager" })
+
 hl.bind(
 	"SUPER + SUPER_L",
 	hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"),
@@ -44,7 +47,6 @@ hl.bind("ALT + Tab", hl.dsp.exec_cmd(ipc .. "window-switcher"))
 hl.bind(mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ "maximized", "toggle" }))
 hl.bind("F11", hl.dsp.window.fullscreen({ "maximized", "toggle" }))
 hl.bind(mod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mod .. " + P", hl.dsp.window.pseudo())
 
 -- focus
 hl.bind(mod .. " + left", hl.dsp.focus({ direction = "left" }))
