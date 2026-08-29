@@ -5,7 +5,6 @@ application/x-cbz=sioyek.desktop;
 model/obj=com.prusa3d.PrusaSlicer.desktop;
 text/x-lua=neovide.desktop;
 video/matroska=mpv.desktop;
-
 [Default Applications]
 application/epub+zip=sioyek.desktop;
 application/octet-stream=com.prusa3d.PrusaSlicer.desktop;
