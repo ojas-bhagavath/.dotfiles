@@ -9,9 +9,9 @@ prepend_keymap = [
   # What Size
   { on = ["<A-s>"], run = "plugin what-size", desc = "Calc size of selection or cwd" },
   # Max-Preview
-  { on = ["<A-m>"], run = "plugin toggle-pane max-preview", desc = "Maximize or restore preview" },
+  { on = ["M"], run = "plugin toggle-pane max-preview", desc = "Maximize or restore preview" },
   # Mount
-  { on = ["M"], run = "plugin mount", desc = "Toggle mount plugin" },
+  { on = ["<A-m>"], run = "plugin mount", desc = "Toggle mount plugin" },
   { on = ["W"], run = "plugin thumbnails", desc = "Toggle thumbnail view" },
 
   # Hopping
