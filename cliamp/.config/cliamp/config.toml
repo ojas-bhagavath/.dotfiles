@@ -1,7 +1,7 @@
 theme = "tokyo-night"
 repeat = "All"
 initial_directory = "~/Stuff/Music"
-visualizer = "Ascii"
+visualizer = "Geyser"
 provider = "local"
 eq_preset = "Flat"
 
