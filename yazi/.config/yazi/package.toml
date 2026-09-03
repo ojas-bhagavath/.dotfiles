@@ -5,8 +5,8 @@ hash = "187cc58ba7ac3befd49c342129e6f1b6"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
-rev = "ec94d9a"
-hash = "4b546f609ab8630a083cecf9ab5091d2"
+rev = "1cb456f"
+hash = "7699acf73a1079f8a4afef5cec84ce73"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
