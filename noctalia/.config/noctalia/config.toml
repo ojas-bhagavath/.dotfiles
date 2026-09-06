@@ -341,5 +341,6 @@ drawer_item_size = 18.0
 match_adjacent_spacing = true
 
 [widget.workspaces]
+active_pill_size = 2.0
 font_family = "Source Sans Pro"
 max_label_chars = 8
