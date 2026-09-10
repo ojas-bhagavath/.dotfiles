@@ -144,3 +144,6 @@ set searchurls.wp https://en.wikipedia.org/wiki/%s
 set searchurls.yt https://www.youtube.com/results?search_query=%s
 set searchurls.ytm https://music.youtube.com/search?q=%s
 set searchurls.yts https://yts.lt/browse-movies/%s/all/all/0/latest/0/all
+
+blacklistadd www.tinkercad.com
+blacklistadd www.gradescope.com
