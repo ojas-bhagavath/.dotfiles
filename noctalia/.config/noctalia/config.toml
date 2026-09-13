@@ -14,7 +14,6 @@ end = [
   "brightness",
   "battery",
   "group:g1",
-  "session",
 ]
 font_family = "Source Sans Pro"
 font_weight = 700
@@ -222,6 +221,7 @@ polkit_placement = "attached"
 transparency_mode = "glass"
 
 [shell.screenshot]
+annotate = true
 directory = "/home/ojas/Stuff/Pictures/Screenshots"
 
 [[shell.session.actions]]
@@ -343,3 +343,7 @@ match_adjacent_spacing = true
 [widget.workspaces]
 font_family = "Source Sans Pro"
 max_label_chars = 8
+
+[widget.workspaces.actions]
+scroll_left = "workspace-switch prev"
+scroll_right = "workspace-switch next"
