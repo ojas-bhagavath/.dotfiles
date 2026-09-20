@@ -111,6 +111,7 @@ set searchurls.gr https://www.goodreads.com/search?q=%s
 set searchurls.icon https://simpleicons.org/?q=%s
 set searchurls.imdb https://www.imdb.com/find/?q=%s
 set searchurls.jc141 https://1337x.to/search/%s jc141/1/
+set searchurls.jp https://www.jetpens.com/search?q=%s
 set searchurls.l2u https://www.unicodeit.net/?%s
 set searchurls.lb https://letterboxd.com/search/%s
 set searchurls.lg http://libgen.li/index.php?req=%s&order=extension&ordermode=desc
