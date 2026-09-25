@@ -35,9 +35,9 @@ return {
 		{ name = "freecad", desc = "Parametric 3D CAD modeler", config = "freecad" },
 		{ name = "fzf", desc = "Fuzzy finder" },
 		{ name = "gaupol", desc = "A tool to manipulate srt files" },
+		{ name = "github-cli", desc = "GitHub's official command-line tool", config = "gh" },
 		{ name = "git", desc = "A neat version control system", config = "git" },
 		{ name = "git-delta", desc = "Syntax-highlighting pager for git and diff output" },
-		{ name = "github-cli", desc = "GitHub's official command-line tool", config = "gh" },
 		{ name = "gnome-disk-utility", desc = "As the name says" },
 		{
 			name = "gnome-keyring",
@@ -67,7 +67,6 @@ return {
 		{ name = "handlr-regex", desc = "Powerful alternative to xdg-utils written in Rust", config = "handlr" },
 		{ name = "httrack", desc = "Download entire websites" },
 		{ name = "hugo", desc = "Fast and modern static site generator" },
-		{ name = "hyprland", desc = "A dynamic tiling Wayland compositor", config = "hypr" },
 		{ name = "imagemagick", desc = "An image viewing/manipulation program" },
 		{ name = "intel-media-driver", desc = "As the name says..." },
 		{
@@ -218,6 +217,7 @@ return {
 		{ name = "ttf-noto-nerd", desc = "google noto fonts ttf with nerd-fonts patch" },
 		{ name = "typst", desc = "Markup-based typesetting system, a modern LaTeX alternative" },
 		{ name = "udiskie", desc = "Automounter for removable media using udisks" },
+		{ name = "umbriel-git", desc = "A dynamic tiling Wayland compositor by noctalia devs", config = "umbriel" },
 		{ name = "unarchiver", desc = "Required for archive preview in yazi" },
 		{ name = "visual-studio-code-bin", desc = "Microsoft's code editor (official binary build)" },
 		{ name = "wayvnc", desc = "VNC server for wlroots-based Wayland compositors" },
@@ -230,6 +230,7 @@ return {
 			desc = "backend to be able to use terminal file managers for browser file selection",
 			config = "firefox",
 		},
+		{ name = "xwayland-satellite", desc = "a dependency of umbriel to run xwayland applications" },
 		{
 			name = "yazi",
 			desc = "A TUI file manager written in rust",

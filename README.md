@@ -2,7 +2,7 @@
 
 ![machine.png](https://github.com/ojas-bhagavath/.dotfiles/blob/5391b10a05b0fd84dd25b547c2aaae899931e3d8/assets/machine.png)
 
-This is a repository containing my dotfiles to my [Arch Linux](https://archlinux.org/) machine with [hyprland](https://hypr.land) compositor.
+This is a repository containing my dotfiles to my [Arch Linux](https://archlinux.org/) machine with [umbriel](https://docs.noctalia.dev/umbriel/) compositor, and [noctalia](https://docs.noctalia.dev/noctalia/) shell.
 
 Although this repository is **not meant to be copied directly** as everything is tuned to my personal preferences, clone it if you wish to do so.
 
