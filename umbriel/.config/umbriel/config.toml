@@ -10,11 +10,12 @@ autostart = [
 ]
 mod_key = "Super"
 xwayland = true
-show_cheatsheet = true
+show_cheatsheet = false
 
 [events]
 lid_close = "noctalia msg session-lock"
 
+[layout]
 [layout.scrolling]
 default_extent_fraction = 0.5
 
