@@ -1,5 +1,5 @@
 [include]
-files = ["noctalia.toml"]
+files = []
 
 [general]
 autostart = [
@@ -141,3 +141,6 @@ natural_scroll = true
 follows_focus = true
 [input.focus]
 follows_mouse = true
+
+[include.optional]
+files = ["noctalia.toml"]
