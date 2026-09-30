@@ -16,6 +16,7 @@ show_cheatsheet = false
 lid_close = "noctalia msg session-lock"
 
 [layout]
+mode = "dwindle"
 [layout.scrolling]
 default_extent_fraction = 0.5
 
