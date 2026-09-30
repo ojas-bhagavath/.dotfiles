@@ -96,7 +96,7 @@ default_extent_fraction = 0.5
 "Mod+Shift+7" = "window-move-to-workspace:7"
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
-
+"Mod+O" = "overview-toggle"
 # scratchpad
 "Mod+Shift+Space" = "window-move-to-scratchpad"
 "Mod+Space" = "scratchpad-toggle"
