@@ -16,11 +16,11 @@ show_cheatsheet = false
 lid_close = "noctalia msg session-lock"
 
 [layout]
-mode = "dwindle"
 [layout.scrolling]
 default_extent_fraction = 0.5
 
 [keybinds]
+
 # applications
 "Mod+B" = "spawn:firefox"
 "Mod+E" = "spawn:kitty -e yazi"
@@ -48,6 +48,7 @@ default_extent_fraction = 0.5
 "XF86AudioPause" = "spawn:noctalia msg media toggle"
 "XF86AudioStop" = "spawn:noctalia msg media stop"
 "XF86AudioNext" = "spawn:noctalia msg media next"
+
 # session
 "Mod+X" = "spawn:noctalia msg session lock"
 "Mod+C" = "spawn:noctalia msg caffeine-toggle"
@@ -98,6 +99,7 @@ default_extent_fraction = 0.5
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
 "Mod+O" = "overview-toggle"
+
 # scratchpad
 "Mod+Shift+Space" = "window-move-to-scratchpad"
 "Mod+Space" = "scratchpad-toggle"
