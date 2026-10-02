@@ -29,7 +29,6 @@ default_extent_fraction = 0.5
 "Mod+Return" = "spawn:kitty"
 "Mod+S" = "spawn:sioyek --new-window"
 "Mod+Shift+E" = "spawn:nemo"
-"Mod+Slash" = "cheatsheet-toggle"
 "Mod+T" = "spawn:kitty"
 
 # shell
@@ -38,6 +37,8 @@ default_extent_fraction = 0.5
 "Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
 "Print" = "spawn:noctalia msg screenshot-region"
 "Shift+Print" = "spawn:noctalia msg screenshot-fullscreen"
+"Mod+Slash" = "cheatsheet-toggle"
+"Mod+Shift+Slash" = "spawn:noctalia msg notification-clear-active"
 "XF86AudioMute" = "spawn:noctalia msg volume-mute"
 "XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
 "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
