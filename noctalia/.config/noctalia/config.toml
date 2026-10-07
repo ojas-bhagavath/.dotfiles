@@ -6,15 +6,7 @@ background_opacity = 0.99999997764825821
 capsule = true
 center = ["active_window"]
 concave_edge_corners = false
-end = [
-  "tray",
-  "network",
-  "bluetooth",
-  "volume",
-  "brightness",
-  "battery",
-  "group:g1",
-]
+end = ["tray", "group:g3", "group:g2", "group:g1"]
 font_family = "Source Sans Pro"
 font_weight = 700
 margin_ends = 0
@@ -31,6 +23,7 @@ middle = "settings-toggle bar"
 accordion = true
 accordion_direction = "start"
 border = ""
+border_width = 1.0
 enabled = true
 fill = "secondary"
 foreground = "on_primary"
@@ -39,6 +32,29 @@ members = ["clock", "clock-india"]
 opacity = 1.0
 padding = 6.0
 widget_spacing = 12
+
+[[bar.default.capsule_group]]
+accordion = false
+accordion_direction = "end"
+border = ""
+border_width = 1.0
+enabled = true
+fill = "surface_variant"
+id = "g2"
+members = ["volume", "brightness", "battery"]
+opacity = 1.0
+padding = 6.0
+
+[[bar.default.capsule_group]]
+accordion = false
+accordion_direction = "end"
+border_width = 1.0
+enabled = true
+fill = "surface_variant"
+id = "g3"
+members = ["network", "bluetooth"]
+opacity = 1.0
+padding = 6.0
 
 [battery]
 warning_threshold = 15
@@ -375,8 +391,10 @@ match_adjacent_spacing = true
 show_label = false
 
 [widget.workspaces]
+active_pill_size = 2.0
 font_family = "Source Sans Pro"
 max_label_chars = 8
+show_labels = false
 
 [widget.workspaces.actions]
 scroll_left = "workspace-switch prev"
