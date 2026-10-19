@@ -117,6 +117,7 @@ address = "Norman, United States"
 enabled = true
 schema_version = 2
 widget_order = [
+  "lockscreen-login-box@HDMI-A-1",
   "lockscreen-login-box@WL-1",
   "lockscreen-login-box@IPAD",
   "lockscreen-widget-0000000000000001",
@@ -151,6 +152,7 @@ show_caps_lock = true
 show_keyboard_layout = true
 show_login_button = true
 show_media = true
+show_password_reveal = true
 show_session_buttons = true
 show_unlock_hint = true
 show_weather = true
@@ -158,11 +160,11 @@ show_weather = true
 [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
 box_height = 196.0
 box_width = 810.0
-cx = 956.999755859375
-cy = 847.0
+cx = 471.9998779296875
+cy = 835.4761962890625
 output = "WL-1"
-placement_height = 1029.0
-placement_width = 1914.0
+placement_height = 1015.0
+placement_width = 944.0
 rotation = 0.0
 type = "login_box"
 
@@ -178,6 +180,7 @@ show_caps_lock = true
 show_keyboard_layout = true
 show_login_button = true
 show_media = true
+show_password_reveal = true
 show_session_buttons = true
 show_unlock_hint = true
 show_weather = true
@@ -205,6 +208,7 @@ show_caps_lock = true
 show_keyboard_layout = true
 show_login_button = true
 show_media = true
+show_password_reveal = true
 show_session_buttons = true
 show_unlock_hint = false
 show_weather = true
@@ -258,6 +262,11 @@ settings_show_advanced = true
 
 [shell.greeter_sync]
 auto_sync = true
+
+[shell.launcher]
+app_grid = true
+category_icons_only = true
+search_position = "top"
 
 [shell.panel]
 clipboard_placement = "attached"

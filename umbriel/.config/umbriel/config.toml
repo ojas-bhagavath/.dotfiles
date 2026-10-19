@@ -18,9 +18,11 @@ honor_restored_maximize = false
 lid_close = "noctalia msg session-lock"
 
 [layout]
-mode = "scrolling"
+mode = "dwindle"
 [layout.scrolling]
 default_extent_fraction = 0.5
+[layout.dwindle]
+new_toward_cursor = true
 
 [keybinds]
 
@@ -67,20 +69,20 @@ default_extent_fraction = 0.5
 "Mod+F" = "window-toggle-floating"
 "Mod+Left" = "window-focus-left"
 "Mod+H" = "window-focus-left"
-"Mod+Shift+Left" = "column-move-left"
-"Mod+Shift+H" = "column-move-left"
+"Mod+Shift+Left" = "window-move-left"
+"Mod+Shift+H" = "window-move-left"
 "Mod+Down" = "window-focus-down"
 "Mod+J" = "window-focus-down"
-"Mod+Shift+Down" = "window-move-or-workspace-down"
-"Mod+Shift+J" = "window-move-or-workspace-down"
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+J" = "window-move-down"
 "Mod+Up" = "window-focus-up"
 "Mod+K" = "window-focus-up"
-"Mod+Shift+Up" = "window-move-or-workspace-up"
-"Mod+Shift+K" = "window-move-or-workspace-up"
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+K" = "window-move-up"
 "Mod+Right" = "window-focus-right"
 "Mod+L" = "window-focus-right"
-"Mod+Shift+Right" = "column-move-right"
-"Mod+Shift+L" = "column-move-right"
+"Mod+Shift+Right" = "window-move-right"
+"Mod+Shift+L" = "window-move-right"
 "Mod+Shift+P" = "window-toggle-pinned"
 
 # workspace
@@ -148,3 +150,6 @@ natural_scroll = true
 follows_focus = true
 [input.focus]
 follows_mouse = true
+
+[output.eDP-1]
+workspace_axis = "horizontal"
