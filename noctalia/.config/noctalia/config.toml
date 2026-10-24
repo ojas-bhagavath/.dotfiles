@@ -1,6 +1,9 @@
 [accessibility]
 ui_scale = 1.2500000111758709
 
+[bar]
+order = ["default"]
+
 [bar.default]
 background_opacity = 0.99999997764825821
 capsule = true
