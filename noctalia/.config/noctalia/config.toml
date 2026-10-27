@@ -42,7 +42,7 @@ accordion_direction = "end"
 border = ""
 border_width = 1.0
 enabled = true
-fill = "surface_variant"
+fill = "surface_container"
 id = "g2"
 members = ["volume", "brightness", "battery"]
 opacity = 1.0
@@ -53,7 +53,7 @@ accordion = false
 accordion_direction = "end"
 border_width = 1.0
 enabled = true
-fill = "surface_variant"
+fill = "surface_container"
 id = "g3"
 members = ["network", "bluetooth"]
 opacity = 1.0
@@ -144,7 +144,7 @@ rotation = 0.0
 type = "login_box"
 
 [lockscreen_widgets.widget."lockscreen-login-box@IPAD".settings]
-background_color = "surface_variant"
+background_color = "surface_container"
 background_opacity = 0.88
 background_radius = 12.0
 center_password_text = false
@@ -172,7 +172,7 @@ rotation = 0.0
 type = "login_box"
 
 [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
-background_color = "surface_variant"
+background_color = "surface_container"
 background_opacity = 0.88
 background_radius = 12.0
 center_password_text = false
@@ -200,7 +200,7 @@ rotation = 0.0
 type = "login_box"
 
 [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-background_color = "surface_variant"
+background_color = "surface_container"
 background_opacity = 0.88
 background_radius = 12.0
 center_password_text = true
