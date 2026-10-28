@@ -44,6 +44,7 @@ new_toward_cursor = true
 "Shift+Print" = "spawn:noctalia msg screenshot-fullscreen"
 "Mod+Slash" = "cheatsheet-toggle"
 "Mod+Shift+C" = "spawn:noctalia msg notification-clear-active"
+"Mod+D" = "spawn:noctalia msg notification-dnd-toggle"
 "XF86AudioMute" = "spawn:noctalia msg volume-mute"
 "XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
 "XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
