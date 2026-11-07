@@ -48,3 +48,5 @@ export PATH="$HOME/.local/bin:$HOME/.scripts:$CARGO_HOME/bin:$PNPM_HOME:$HOME/.e
 if [ -f "$HOME/.secrets" ]; then
     source "$HOME/.secrets"
 fi
+
+. "$HOME/.local/share/../bin/env"
