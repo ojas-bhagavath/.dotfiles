@@ -1,0 +1,12 @@
+
+[[Snippets]]
+  Description = "Add the filename without the extension as title for mkv files"
+  Output = ""
+  Tag = []
+  command = "for t in *.mkv; do mkvpropedit \"$t\" --edit info --set \"title=${t%.*}\"; done"
+
+[[Snippets]]
+  Description = "Attach the jpg file with the same name as an mkv file as a thumbnail for the mkv file using ffmpeg and delete the jpg file"
+  Output = ""
+  Tag = []
+  command = "for j in *.mkv; do ffmpeg -i \"$j\" -attach \"${j%.*}.jpg\" -metadata:s:t:0 mimetype=image/jpeg -c copy \"${j%.*}1.mkv\"; mv -f \"${j%.*}1.mkv\" \"${j%.*}.mkv\"; rm -rf \"${j%.*}.jpg\"; done"
