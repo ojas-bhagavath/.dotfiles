@@ -39,6 +39,7 @@ return {
 		{ name = "git", desc = "A neat version control system", config = "git" },
 		{ name = "git-delta", desc = "Syntax-highlighting pager for git and diff output" },
 		{ name = "gnome-disk-utility", desc = "As the name says" },
+		{ name = "gnome-font-viewer", desc = "As the name says" },
 		{
 			name = "gnome-keyring",
 			desc = "Stores passwords, keys, and certificates securely",
@@ -90,7 +91,7 @@ return {
 		{ name = "mpv", desc = "The OG video player", config = "mpv" },
 		{ name = "nemo", desc = "A GUI file manager" },
 		{ name = "neovide", desc = "A graphical interface for neovim" },
-		{ name = "neovim", desc = "A powerful text editor", config = "nvim" },
+		{ name = "neovim-nightly-bin", desc = "A powerful text editor", config = "nvim" },
 		{ name = "network-manager-applet", desc = "System tray applet for NetworkManager" },
 		{
 			name = "networkmanager",
