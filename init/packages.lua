@@ -127,6 +127,7 @@ return {
 		{ name = "pavucontrol", desc = "pulseaudio volume control" },
 		{ name = "pdfjs", desc = "A utility required to natively view pdfs on browsers" },
 		{ name = "pdftk", desc = "Command-line tool for working with PDFs" },
+		{ name = "pet", desc = "Command-line snippet tool", config = "pet" },
 		{
 			name = "pipewire",
 			desc = "Low-latency audio/video router and processor",
@@ -156,6 +157,7 @@ return {
 			system_service = "reflector.service",
 			post_install = "sudo reflector --latest 10 --country US --age 24 --protocol http,https --sort rate --download-timeout 60 --save /etc/pacman.d/mirrorlist",
 		},
+		{ name = "readest", desc = "A pdf/epub reader with cross platform sync" },
 		{ name = "resvg", desc = "tool needed for svg previews in yazi" },
 		{ name = "ripgrep", desc = "A search tool that combines the usability of ag with the raw speed of grep" },
 		{

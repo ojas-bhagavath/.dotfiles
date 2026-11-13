@@ -33,7 +33,7 @@ new_toward_cursor = true
 "Mod+P" = "spawn:keepassxc"
 "Mod+Return" = "spawn:kitty"
 "Mod+S" = "spawn:sioyek --new-window"
-"Mod+Shift+E" = "spawn:nemo"
+"Mod+Shift+E" = "spawn:dolphin"
 "Mod+T" = "spawn:kitty"
 
 # shell
