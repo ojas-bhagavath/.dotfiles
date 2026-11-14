@@ -35,6 +35,7 @@ new_toward_cursor = true
 "Mod+S" = "spawn:sioyek --new-window"
 "Mod+Shift+E" = "spawn:dolphin"
 "Mod+T" = "spawn:kitty"
+"Mod+Shift+O" = "spawn:obsidian"
 
 # shell
 "Mod" = "spawn:noctalia msg panel-toggle launcher"
