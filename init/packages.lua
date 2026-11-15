@@ -29,7 +29,16 @@ return {
 		{ name = "fastfetch", desc = "Fast, highly customizable system info tool" },
 		{ name = "fd", desc = "A fast find replacement" },
 		{ name = "ffmpeg", desc = "Complete solution to record, convert and stream audio and video" },
-		{ name = "ffmpegthumbnailer", desc = "A utility to produce video thumbnails for yazi" },
+		{
+			name = "ffmpegthumbnailer",
+			desc = "A utility to produce video thumbnails for yazi",
+			root_config = {
+				{
+					source = "ffmpegthumbnailer/ffmpegthumbnailer.thumbnailer",
+					target = "/usr/share/thumbnailers/ffmpegthumbnailer.thumbnailer",
+				},
+			},
+		},
 		{ name = "firefox", desc = "The main browser", config = "firefox" },
 		{ name = "flatpak", desc = "Enables installing flatpaks" },
 		{ name = "freecad", desc = "Parametric 3D CAD modeler", config = "freecad" },
