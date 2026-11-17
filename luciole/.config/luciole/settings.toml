@@ -1,0 +1,11 @@
+schema_version = 1
+
+[browser]
+density = "comfortable"
+grid_icon_size = 128
+show_hidden = true
+show_preview = false
+thumbnail_cache_mib = 256
+thumbnail_max_file_mib = 256
+thumbnail_policy = "all"
+view_mode = "miller"
