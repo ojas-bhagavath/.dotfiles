@@ -122,7 +122,7 @@ action = "overview-open"
 [hot_corners.top_right]
 enabled = true
 delay_ms = 300
-action = "spawn:noctalia msg panel-toggle control-center"
+action = "spawn:noctalia msg panel-toggle launcher"
 
 [[window_rule]]
 match.app_id = "^dev.noctalia.Noctalia$"
