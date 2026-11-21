@@ -1,14 +1,17 @@
+[session]
+default = "Umbriel"
+
+[user]
+default = "ojas"
+
 [appearance]
 scheme = "Synced"
 password_style = "random"
 hide_logo = true
 font_family = "Source Sans Pro"
 
+[clock]
+time_font_size = 72
+
 [output]
 scale = 1.25
-
-[session]
-default = "Umbriel"
-
-[user]
-default = "ojas"
