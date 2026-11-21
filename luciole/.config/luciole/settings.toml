@@ -2,7 +2,6 @@ schema_version = 1
 
 [browser]
 always_show_status_bar = true
-chooser_show_preview = true
 density = "comfortable"
 grid_icon_size = 128
 preview_width = 300
@@ -14,4 +13,4 @@ sidebar_width = 300
 thumbnail_cache_mib = 256
 thumbnail_max_file_mib = 256
 thumbnail_policy = "all"
-view_mode = "grid"
+view_mode = "miller"
