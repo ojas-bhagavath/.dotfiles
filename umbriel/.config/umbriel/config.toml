@@ -25,47 +25,46 @@ default_extent_fraction = 0.5
 new_toward_cursor = true
 
 [keybinds]
-
 # applications
-"Mod+B" = "spawn:firefox"
-"Mod+E" = "spawn:kitty -e yazi"
-"Mod+N" = "spawn:neovide"
-"Mod+P" = "spawn:keepassxc"
-"Mod+Return" = "spawn:kitty"
-"Mod+S" = "spawn:sioyek --new-window"
-"Mod+Shift+E" = "spawn:luciole"
-"Mod+T" = "spawn:kitty"
-"Mod+Shift+O" = "spawn:obsidian"
+"Mod+B" = "spawn firefox"
+"Mod+E" = "spawn kitty -e yazi"
+"Mod+N" = "spawn neovide"
+"Mod+P" = "spawn keepassxc"
+"Mod+Return" = "spawn kitty"
+"Mod+S" = "spawn sioyek --new-window"
+"Mod+Shift+E" = "spawn luciole"
+"Mod+T" = "spawn kitty"
+"Mod+Shift+O" = "spawn obsidian"
 
 # shell
-"Mod" = "spawn:noctalia msg panel-toggle launcher"
-"Mod+Comma" = "spawn:noctalia msg settings-toggle"
-"Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
-"Print" = "spawn:noctalia msg screenshot-region"
-"Shift+Print" = "spawn:noctalia msg screenshot-fullscreen"
+"Mod" = "spawn noctalia msg panel-toggle launcher"
+"Mod+Comma" = "spawn noctalia msg settings-toggle"
+"Mod+V" = "spawn noctalia msg panel-toggle clipboard"
+"Print" = "spawn noctalia msg screenshot-region"
+"Shift+Print" = "spawn noctalia msg screenshot-fullscreen"
 "Mod+Slash" = "cheatsheet-toggle"
-"Mod+Shift+C" = "spawn:noctalia msg notification-clear-active"
-"Mod+D" = "spawn:noctalia msg notification-dnd-toggle"
-"XF86AudioMute" = "spawn:noctalia msg volume-mute"
-"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
-"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
-"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
-"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up"
-"XF86AudioPrev" = "spawn:noctalia msg media previous"
-"XF86AudioPlay" = "spawn:noctalia msg media toggle"
-"XF86AudioPause" = "spawn:noctalia msg media toggle"
-"XF86AudioStop" = "spawn:noctalia msg media stop"
-"XF86AudioNext" = "spawn:noctalia msg media next"
+"Mod+Shift+C" = "spawn noctalia msg notification-clear-active"
+"Mod+D" = "spawn noctalia msg notification-dnd-toggle"
+"XF86AudioMute" = "spawn noctalia msg volume-mute"
+"XF86AudioLowerVolume" = "spawn noctalia msg volume-down"
+"XF86AudioRaiseVolume" = "spawn noctalia msg volume-up"
+"XF86MonBrightnessDown" = "spawn noctalia msg brightness-down"
+"XF86MonBrightnessUp" = "spawn noctalia msg brightness-up"
+"XF86AudioPrev" = "spawn noctalia msg media previous"
+"XF86AudioPlay" = "spawn noctalia msg media toggle"
+"XF86AudioPause" = "spawn noctalia msg media toggle"
+"XF86AudioStop" = "spawn noctalia msg media stop"
+"XF86AudioNext" = "spawn noctalia msg media next"
 
 # session
-"Mod+X" = "spawn:noctalia msg session lock"
-"Mod+C" = "spawn:noctalia msg caffeine-toggle"
-"XF86PowerOff" = "spawn:noctalia msg panel-toggle session"
+"Mod+X" = "spawn noctalia msg session lock"
+"Mod+C" = "spawn noctalia msg caffeine-toggle"
+"XF86PowerOff" = "spawn noctalia msg panel-toggle session"
 
 # window management
 "Mod+Q" = "window-close"
 "Alt+F4" = "window-close"
-"Alt+Tab" = "spawn:noctalia msg window-switcher"
+"Alt+Tab" = "spawn noctalia msg window-switcher"
 "F11" = "window-toggle-maximize-to-edges"
 "Mod+Shift+F" = "window-toggle-maximize"
 "Mod+F" = "window-toggle-floating"
@@ -88,24 +87,24 @@ new_toward_cursor = true
 "Mod+Shift+P" = "window-toggle-pinned"
 
 # workspace
-"Mod+1" = "workspace-switch:1"
-"Mod+2" = "workspace-switch:2"
-"Mod+3" = "workspace-switch:3"
-"Mod+4" = "workspace-switch:4"
-"Mod+5" = "workspace-switch:5"
-"Mod+6" = "workspace-switch:6"
-"Mod+7" = "workspace-switch:7"
-"Mod+8" = "workspace-switch:8"
-"Mod+9" = "workspace-switch:9"
-"Mod+Shift+1" = "window-move-to-workspace-silent:1"
-"Mod+Shift+2" = "window-move-to-workspace-silent:2"
-"Mod+Shift+3" = "window-move-to-workspace-silent:3"
-"Mod+Shift+4" = "window-move-to-workspace-silent:4"
-"Mod+Shift+5" = "window-move-to-workspace-silent:5"
-"Mod+Shift+6" = "window-move-to-workspace-silent:6"
-"Mod+Shift+7" = "window-move-to-workspace-silent:7"
-"Mod+Shift+8" = "window-move-to-workspace-silent:8"
-"Mod+Shift+9" = "window-move-to-workspace-silent:9"
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
+"Mod+Shift+1" = "window-move-to-workspace-silent 1"
+"Mod+Shift+2" = "window-move-to-workspace-silent 2"
+"Mod+Shift+3" = "window-move-to-workspace-silent 3"
+"Mod+Shift+4" = "window-move-to-workspace-silent 4"
+"Mod+Shift+5" = "window-move-to-workspace-silent 5"
+"Mod+Shift+6" = "window-move-to-workspace-silent 6"
+"Mod+Shift+7" = "window-move-to-workspace-silent 7"
+"Mod+Shift+8" = "window-move-to-workspace-silent 8"
+"Mod+Shift+9" = "window-move-to-workspace-silent 9"
 "Mod+O" = "overview-toggle"
 
 # scratchpad
@@ -122,7 +121,7 @@ action = "overview-open"
 [hot_corners.top_right]
 enabled = true
 delay_ms = 300
-action = "spawn:noctalia msg panel-toggle launcher"
+action = "spawn noctalia msg panel-toggle launcher"
 
 [[window_rule]]
 match.app_id = "^dev.noctalia.Noctalia$"
@@ -151,7 +150,7 @@ natural_scroll = true
 [input.cursor]
 follows_focus = true
 [input.focus]
-follows_mouse = true
+follows_mouse = "sloppy"
 
 [output.eDP-1]
 workspace_axis = "horizontal"
