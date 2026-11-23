@@ -1,0 +1,26 @@
+{
+  "reader-0": {
+    "width": 944,
+    "height": 501,
+    "x": 10,
+    "y": 55,
+    "prev_x": 222,
+    "prev_y": 282,
+    "maximized": true,
+    "visible": true,
+    "decorated": false,
+    "fullscreen": false
+  },
+  "main": {
+    "width": 184,
+    "height": 1015,
+    "x": 10,
+    "y": 55,
+    "prev_x": 1726,
+    "prev_y": 55,
+    "maximized": true,
+    "visible": true,
+    "decorated": false,
+    "fullscreen": false
+  }
+}
